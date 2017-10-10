@@ -3,11 +3,11 @@ package allGames;
 import java.util.Scanner;
 
 public class ObstacleCourse {
+	
+	static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner input = new Scanner(System.in);
-		
 		String choiceString; 
 //		int questionNum;
 //		int [] questionNumArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -29,8 +29,6 @@ public class ObstacleCourse {
 	}
 		public static void questions1()
 {
-		Scanner input = new Scanner(System.in);
-		
 		String choiceString; 
 		int question1 = 6;
 		
@@ -49,28 +47,24 @@ public class ObstacleCourse {
 		
 		public static void question2()
 {
-			Scanner input = new Scanner(System.in);
-			
 			String choiceString;
 			
 			System.out.println("There was an airplane crash, every single person on board died, but yet two people survived. \nHow is this possible?>> ");
 			choiceString = input.next();
 			
-			while("The two were married".equalsIgnoreCase(choiceString) || "The 2 were married".equalsIgnoreCase(choiceString) 
+			if("The two were married".equalsIgnoreCase(choiceString) || "The 2 were married".equalsIgnoreCase(choiceString) 
 					|| "2 were married".equalsIgnoreCase(choiceString) || "Two were married".equalsIgnoreCase(choiceString)
 					|| "They were married".equalsIgnoreCase(choiceString))
 			{
 				question3();
 			}
-			
+			else
 			{
 				System.out.println("Wrong, start over...");
 			}
 }
 		public static void question3()
 		{
-			Scanner input = new Scanner(System.in);
-			
 			String choiceString;
 			
 			System.out.println("Test question>>");
