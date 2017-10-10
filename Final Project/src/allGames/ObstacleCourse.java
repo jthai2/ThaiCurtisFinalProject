@@ -41,7 +41,7 @@ public class ObstacleCourse {
 		{
 			question2();
 		}
-		else 
+		else
 		{
 			System.out.println("Wrong, start over...");
 		}
@@ -56,13 +56,13 @@ public class ObstacleCourse {
 			System.out.println("There was an airplane crash, every single person on board died, but yet two people survived. \nHow is this possible?>> ");
 			choiceString = input.next();
 			
-			if("The two were married".equalsIgnoreCase(choiceString) || "The 2 were married".equalsIgnoreCase(choiceString) 
+			while("The two were married".equalsIgnoreCase(choiceString) || "The 2 were married".equalsIgnoreCase(choiceString) 
 					|| "2 were married".equalsIgnoreCase(choiceString) || "Two were married".equalsIgnoreCase(choiceString)
 					|| "They were married".equalsIgnoreCase(choiceString))
 			{
 				question3();
 			}
-			else
+			
 			{
 				System.out.println("Wrong, start over...");
 			}
