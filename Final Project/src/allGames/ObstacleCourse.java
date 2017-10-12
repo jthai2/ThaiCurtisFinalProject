@@ -51,11 +51,12 @@ public class ObstacleCourse {
 			
 			String choiceString;
 			
-			System.out.println("Do bald people shampoo their head?>> ");
+			System.out.println("Do bald people shampoo their head? 'YES' or 'NO'>> ");
 			choiceString = input.next();
 			
 			if("Yes".equalsIgnoreCase(choiceString))
 			{
+				System.out.println("Your answer is right. \nThey shampoo their head to get rid of oil and dirt.");
 				question3();
 			}
 			else
@@ -74,7 +75,7 @@ public class ObstacleCourse {
 			
 			if("No".equalsIgnoreCase(choiceString))
 			{
-				System.out.println("Right \nThe word sand is thought to have originated from an Old English word, which itself "
+				System.out.println("Your answer is right. \nThe word sand is thought to have originated from an Old English word, which itself "
 						+ "originated from the old Dutch word sant, which became zand"); 
 			question4();	
 			}
@@ -88,7 +89,27 @@ public class ObstacleCourse {
 			Scanner input = new Scanner(System.in);
 			String choiceString;
 			
-			System.out.println("Test question");
+			System.out.println("Is a tomato a fruit or vegetable? 'FRUIT' or 'VEGETABLE'>> ");
 			choiceString = input.next();
+			
+			if("Fruit".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Your answer is right. \nTrue fruits are developed from the ovary in the base of the flower, "
+						+ "and contain the seeds of the plant");
+				question5();
+			}
+			if("Vegetable".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Wrong, start over...");
+			}
+		}
+		public static void question5()
+		{
+			Scanner input = new Scanner(System.in);
+			String choiceString;
+			
+			System.out.println("Test Question>>");
+			choiceString = input.next();
+		
 		}
 }
