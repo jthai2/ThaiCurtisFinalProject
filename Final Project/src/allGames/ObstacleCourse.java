@@ -95,7 +95,7 @@ public class ObstacleCourse {
 			if("Fruit".equalsIgnoreCase(choiceString))
 			{
 				System.out.println("Your answer is right. \nTrue fruits are developed from the ovary in the base of the flower, "
-						+ "and contain the seeds of the plant");
+						+ "and contain the seeds of the plant.");
 				question5();
 			}
 			if("Vegetable".equalsIgnoreCase(choiceString))
@@ -108,8 +108,41 @@ public class ObstacleCourse {
 			Scanner input = new Scanner(System.in);
 			String choiceString;
 			
-			System.out.println("Test Question>>");
+			System.out.println("Type in the question that was asked on question 2."
+					+ "\nType 'ONE' if you think it's 'Is sand called sand because it's between sea and land?' "
+					+ "\nType 'TWO' if you think it's 'Do bald people shampoo their head?' "
+					+ "\nType 'THREE' If you think it's 'sserP ehT sretteL xiS oT eunitnonC.'>> ");
 			choiceString = input.next();
-		
+			
+			if("Two".equalsIgnoreCase(choiceString))
+			{
+				question6();
+			}
+			else
+			{
+				System.out.println("Wrong, start over...");
+			}
+		}
+		public static void question6()
+		{
+			Scanner input = new Scanner(System.in);
+			String choiceString;
+			
+			System.out.println("Do people with dentures brush their teeth? 'YES' or 'NO'>> ");
+			choiceString = input.next();
+			
+			if("Yes".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Your answer is right.");
+				question7();
+			}
+		}
+		public static void question7()
+		{
+			Scanner input = new Scanner(System.in);
+			String choiceString;
+			
+			System.out.println("Test question>> ");
+			choiceString = input.next();
 		}
 }
