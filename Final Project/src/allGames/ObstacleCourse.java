@@ -11,8 +11,8 @@ public class ObstacleCourse {
 		String choiceString; 
 		
 		System.out.println("Welcome to this game, you will need to complete 10 questions to pass this course. "
-				+ "\nPay attention to every detail because you might get answers from it. \nIf you don't get the answer right in 3 attempts,"
-				+ " you will be placed back to the previous question. \nAre you ready? 'YES' to continue, 'NO' to quit>>");
+				+ "\nPay attention to every detail because you might get answers from it. \nIf you don't get the answer right, you'll have to start over."
+				+ " \nAre you ready? 'YES' to continue, 'NO' to quit>>");
 		choiceString = input.next();
 		while("Yes".equalsIgnoreCase(choiceString))
 				{
@@ -136,13 +136,83 @@ public class ObstacleCourse {
 				System.out.println("Your answer is right.");
 				question7();
 			}
+			else
+			{
+				System.out.println("Wrong, start over...");
+			}
 		}
 		public static void question7()
 		{
 			Scanner input = new Scanner(System.in);
 			String choiceString;
 			
-			System.out.println("Test question>> ");
+			System.out.println("If Pinocchio says, 'my nose will now grow,' what will happen?"
+					+ "\nPress '1' for 'his nose will grow'."
+					+ "\nPress '2' for 'his nose will not grow'"
+					+ "\nPress '3' for 'no definite answer.'>> ");
 			choiceString = input.next();
+			
+			if("3".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Your answer is right.");
+				question8();	
+			}
+			else
+			{
+				System.out.println("Wrong, start over...");
+			}
+		}
+		public static void question8()
+		{
+			Scanner input = new Scanner(System.in);
+			String choiceString;
+			
+			System.out.println("Which came first,'CHICKEN' or 'EGG.'>> ");
+			choiceString = input.next();
+			
+			if("Egg".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Your answer is right.");
+				question9();
+			}
+			else
+			{
+				System.out.println("Wrong, start over...");
+			}
+		}
+		public static void question9()
+		{
+			Scanner input = new Scanner(System.in);
+			String choiceString;
+			
+			System.out.println("What was the answer to question 6?>> ");
+			choiceString = input.next();
+			
+			if("Yes".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Your answer is right.");
+				question10();
+			}
+			else
+			{
+				System.out.println("Wrong, start over...");
+			}
+		}
+		public static void question10()
+		{
+			Scanner input = new Scanner(System.in);
+			String choiceString;
+			
+			System.out.println("Is Game Of Thrones the greatest TV show of all time? 'YES' or 'NO' or 'DEFINITELYYES'>> ");
+			choiceString = input.next();
+			
+			if("DEFINITELYYES".equalsIgnoreCase(choiceString))
+			{
+				System.out.println("Congratulations, you have completely this course!");
+			}
+			else
+			{
+				System.out.println("Trash, start over...");
+			}
 		}
 }
