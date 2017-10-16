@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ObstacleCourse {
 
+	//Welcoming screen which also tells you what the game will be about
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
@@ -25,6 +26,7 @@ public class ObstacleCourse {
 		}
 		
 	}
+		//Question 1 question and answer
 		public static void questions1()
 {
 		Scanner input = new Scanner(System.in);
@@ -44,7 +46,7 @@ public class ObstacleCourse {
 			System.out.println("Wrong, start over...");
 		}
 }
-		
+		//Question 2 question and answer
 		public static void question2()
 {
 			Scanner input = new Scanner(System.in);
@@ -65,6 +67,7 @@ public class ObstacleCourse {
 			}
 
 }
+		//Question 3 question and answer
 		public static void question3()
 		{
 			Scanner input = new Scanner(System.in);
@@ -84,6 +87,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 4 question and answer
 		public static void question4()
 		{
 			Scanner input = new Scanner(System.in);
@@ -103,6 +107,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 5 question and answer
 		public static void question5()
 		{
 			Scanner input = new Scanner(System.in);
@@ -123,6 +128,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 6 question and answer
 		public static void question6()
 		{
 			Scanner input = new Scanner(System.in);
@@ -141,6 +147,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 7 question and answer
 		public static void question7()
 		{
 			Scanner input = new Scanner(System.in);
@@ -162,6 +169,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 8 question and answer
 		public static void question8()
 		{
 			Scanner input = new Scanner(System.in);
@@ -180,6 +188,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 9 question and answer
 		public static void question9()
 		{
 			Scanner input = new Scanner(System.in);
@@ -198,6 +207,7 @@ public class ObstacleCourse {
 				System.out.println("Wrong, start over...");
 			}
 		}
+		//Question 10 question and answer
 		public static void question10()
 		{
 			Scanner input = new Scanner(System.in);
@@ -209,6 +219,7 @@ public class ObstacleCourse {
 			if("DEFINITELYYES".equalsIgnoreCase(choiceString))
 			{
 				System.out.println("Congratulations, you have completely this course!");
+				System.exit(0);
 			}
 			else
 			{
