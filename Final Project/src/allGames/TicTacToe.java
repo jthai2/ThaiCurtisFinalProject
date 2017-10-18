@@ -11,16 +11,21 @@ public class TicTacToe {
 
 	public static void main(String[] args) {
 		in = new Scanner(System.in);
+		//shows board
 		board = new String[9];
+		//x's turn
 		turn = "X";
 		String winner = null;
+		//display populateEmptyBoard
 		populateEmptyBoard();
-
+		
+		//print welcoming screen
 		System.out.println("Welcome to 2 Player Tic Tac Toe.");
 		System.out.println("--------------------------------");
 		printBoard();
 		System.out.println("X's will play first. Enter a slot number to place X in:");
-
+		
+		//sees if the user types in anything other than the valid numbers, if invalid numbers are typed, they need to re-enter a slot number
 		while (winner == null) {
 			int numInput;
 			try {
@@ -33,6 +38,8 @@ public class TicTacToe {
 				System.out.println("Invalid input; re-enter slot number:");
 				continue;
 			}
+			
+			//the if statement to see which person goes next
 			if (board[numInput-1].equals(String.valueOf(numInput))) {
 				board[numInput-1] = turn;
 				if (turn.equals("X")) {
@@ -47,13 +54,14 @@ public class TicTacToe {
 				continue;
 			}
 		}
+		//prints draw if game is a draw, else it prints who has won
 		if (winner.equalsIgnoreCase("draw")) {
 			System.out.println("It's a draw! Thanks for playing.");
 		} else {
 			System.out.println("Congratulations! " + winner + "'s have won! Thanks for playing.");
 		}
 	}
-
+	//keeps track of where the user entered the number to see if they have three X's or O's
 	static String checkWinner() {
 		for (int a = 0; a < 8; a++) {
 			String line = null;
@@ -89,18 +97,18 @@ public class TicTacToe {
 				return "O";
 			}
 		}
-
+		//for loop that sees if the board contains a value of 1-9, else if a is equal to 8, then it'll return to a draw
 		for (int a = 0; a < 9; a++) {
 			if (Arrays.asList(board).contains(String.valueOf(a+1))) {
 				break;
 			}
 			else if (a == 8) return "draw";
 		}
-
+		//sees whos turn it is to enter a number
 		System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in:");
 		return null;
 	}
-
+	//array that shows the board game
 	static void printBoard() {
 		System.out.println("----|---|----");
 		System.out.println("| " + board[0] + " | " + board[1] + " | " + board[2] + " |");
@@ -110,7 +118,7 @@ public class TicTacToe {
 		System.out.println("| " + board[6] + " | " + board[7] + " | " + board[8] + " |");
 		System.out.println("----|---|----");
 	}
-
+	//for loop that sees if a is equal to values
 	static void populateEmptyBoard() {
 		for (int a = 0; a < 9; a++) {
 			board[a] = String.valueOf(a+1);
