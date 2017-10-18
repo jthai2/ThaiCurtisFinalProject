@@ -4,5 +4,5 @@ What we created was 3 games that you could choose from. One was ObstacleCourse, 
 <img src="ObstacleCourse.jpg" heights="250" width ="250" "alt="alt+"Flow Chart">
 <h3>War Flow Chart</h3>
 <img src="War.jpg" heights="250" width ="250" "alt="alt+"Flow Chart">
-<h3>Tic-Tac-Toe</h3>
+<h3>Tic-Tac-Toe Flow Chart</h3>
 <img src="TicTacToe.jpg" heights="250" width ="250" "alt="alt+"Flow Chart">
